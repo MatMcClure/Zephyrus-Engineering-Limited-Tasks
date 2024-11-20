@@ -1,0 +1,35 @@
+
+<!--
+  I used a link tag to connect the HTML to the CSS for some basic 
+  stylization. I created a script tag for the JavaScript. I added an 
+  event listener to the button to have the h1 change what it was 
+  displaying. DOM manipulation was used with "getElementById" and
+  "textContent" to grab the text by its ID and have its contents changed.
+  A minor issue was when I changed the h1 text to a header instead of 
+  keeping it in the body. This changed the formatting of my button. 
+  To keep them aligned, I added ",header" beside my "body" in the CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <h1 id="text"> Click the "Change Text" button to change the text. </h1>
+  <button id="changeButton"> Change Text </button>
+</header>
+<body>
+  <script>
+    const button = document.getElementById('changeButton'); 
+    const text = document.getElementById('text');
+    // added an event listener to the button for the text change
+    button.addEventListener('click', function() {
+      text.textContent = 'The text has been changed!';
+    })
+  </script>
+</body>
+</html>
