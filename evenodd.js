@@ -5,7 +5,7 @@
   if the number is even; if not, it returns odd.
 */
 
-function isEvenOrOdd(num) {
+function evenOrOdd(num) {
   if (num % 2 == 0) {  // num is divided by 2
     return "Even";
   } else {
@@ -13,10 +13,9 @@ function isEvenOrOdd(num) {
   }
 }
 
-console.log(isEvenOrOdd(3)); 
+console.log(evenOrOdd(3)); 
 
-console.log(isEvenOrOdd(8)); 
-
+console.log(evenOrOdd(8)); 
 
 /*
   The code below is similar to the top except it ask for a user input.
@@ -26,7 +25,7 @@ console.log(isEvenOrOdd(8));
   valid integer. If a valid integer is entered, "Even" or "Odd" will be printed.
 /*
 
-function isEvenOrOdd() {
+function evenOrOdd() {
   const input = prompt("Input a number:"); 
   const num = parseInt(input);
 
@@ -37,5 +36,5 @@ function isEvenOrOdd() {
   }
 }
 
-isEvenOrOdd();
+evenOrOdd();
 */
