@@ -14,4 +14,5 @@ function isEvenOrOdd(num) {
 }
 
 console.log(isEvenOrOdd(3)); 
+
 console.log(isEvenOrOdd(8)); 
